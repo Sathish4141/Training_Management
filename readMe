@@ -56,11 +56,4 @@ DELETE "delete_student/<int:sid>": Remove a student from enrollment by ID.
 Getting Started
 To run the project locally, follow these steps:
 
-Clone the repository: git clone <repository_url>
-Install any required dependencies.
-Set up the database and execute migrations.
-Run the application.
-Usage
-Use the provided endpoints in Postman to perform CRUD operations on courses and students.
-Provide required data in the request bodies, query parameters, or paths.
-Ensure that foreign key references are accurate when enrolling students in courses.
+Clone the repository: git clone 
