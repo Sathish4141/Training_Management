@@ -24,6 +24,7 @@ def course_create(request):
         c = Course(course_id = course_id, course_name = course_name,course_trainer = course_trainer,course_timings = course_timings,course_fees = course_fees)
 
         c.save()
+
     #     # return {"data":data}
 
     return HttpResponse("success fully created course")
@@ -34,7 +35,7 @@ def course_deatils_get(request):
     for deatail in details:
         print(deatail["course_name"])
 
-    return HttpResponse("All details fetched")
+    return JsonResponse({"message":"all data"})
 
 
 def course_deatils_get_one(request,cid):
